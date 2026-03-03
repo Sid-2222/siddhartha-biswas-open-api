@@ -1,2 +1,1 @@
-# siddhartha-biswas-open-api
-Open API Project
+# siddhartha-biswas-openapi
