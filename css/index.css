@@ -40,11 +40,18 @@ button:hover {
     font-size: 60px;
     margin: 15px 0;
 }
+nav{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+h2{
+    color: #efcc4e;
+}
 
 /* Tablet style (up to 786px) */
 @media (max-width: 786px) {
     .container {
-        
         padding: 25px;
     }
     
@@ -55,6 +62,12 @@ button:hover {
     .weather-icon {
         font-size: 50px;
     }
+
+    nav{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
     
 }
 
@@ -76,4 +89,9 @@ button:hover {
         width: 80%;
         padding: 10px 0;
     }
+    nav{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
 }
