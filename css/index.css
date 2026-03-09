@@ -91,6 +91,7 @@ h2{
     }
     nav{
     display: flex;
+    margin-top: 10px;
     gap: 20px;
     justify-content: center;
 }
