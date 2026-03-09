@@ -73,7 +73,7 @@ document.getElementById("templink").addEventListener("click", () =>{
                 return ((celsius * 9/5) + 32).toFixed(2); 
                 }
 
-                document.getElementById("temp").textContent ="Current Temperature: "+cToF(temperature) + " °F";
+                document.getElementById("temp").textContent ="Current Temperature: "+cToF(temperature) + " \u00B0F";
                 document.getElementById("wind").textContent ="Current Wind Speed: "+ windSpeed + " km/h";
 
 
@@ -105,7 +105,7 @@ document.getElementById("conditionlink").addEventListener("click", () =>{
                 const weatherCode = weatherData.current_weather.weathercode;
                 const windDirection = weatherData.current_weather.winddirection;
 
-                function degToFullCompass(deg) {
+                function degToFullCompass(deg) {  // getting wind direction
                 const dirs = [
                     "North","North-Northeast","Northeast","East-Northeast","East",
                     "East-Southeast","Southeast","South-Southeast","South","South-Southwest",
@@ -160,7 +160,7 @@ document.getElementById("conditionlink").addEventListener("click", () =>{
 
             }catch (error) {
         console.error(error);
-        alert("Something went wrong while condition ckeck");
+        alert("Something went wrong while condition check");
          }
     }
     getCondition();
