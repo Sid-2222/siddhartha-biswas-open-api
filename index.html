@@ -11,14 +11,19 @@
         <h2>Weather Fortune</h2>
 
         <input type="text" id="cityInput" placeholder="Enter city name">
-        <button onclick="getWeather()">Get Weather</button>
+        <button onclick="getCity()">Get City</button>
 
-        <div class="weather-icon" id="icon">🌤️</div>
+        <nav>
+        <a href="#" id="templink" style="display:none;">Temperature</a> 
+        <a href="#" id="conditionlink" style="display:none;">Weather Condition</a>
+        </nav>
+
+        <p> <span id="guide" ></span> </p>
 		
-		<p>Location: <span id="location"></span> </p>
-        <p>Current Temperature: <span id="temp">--</span> °F</p>
-        <p>Current Wind Speed: <span id="wind">--</span> km/h</p>
-        <p>Little History: <span id="history"></span> !</p>
+		<p> <span id="location"></span> </p>
+        <p> <span id="temp"></span></p>
+        <p><span id="wind"></span></p>
+        <p><span id="history"></span></p>
     </div>
 
     <script src="js/index.js"></script>
